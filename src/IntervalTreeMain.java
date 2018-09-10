@@ -7,14 +7,12 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * THIS CLASS IS PROVIDED TO STUDENTS AND WILL NOT BE SUBMITTED<br />
- * -- DO NOT EDIT THIS CLASS
+
+ * This is the main file which runs the program. It has two modes to run: 
  * 
- * <p>This is the main file which runs the program. It has two modes to run:</p> 
- * 
- * <h4>Interactive mode: <code>java IntervalTreeMain 1</code></h4>
+ * Interactive mode: java IntervalTreeMain 1
  *  
- * <h4>Non-Interactive mode: <code>java IntervalTreeMain 2 data_01.txt</code></h4>
+ * Non-Interactive mode: java IntervalTreeMain 2 data_01.txt
  */
 public class IntervalTreeMain {
 	
@@ -23,8 +21,8 @@ public class IntervalTreeMain {
 	 * @param args first argument indicates mode 
 	 * (1 for interactive or 2 for non-interactive);  
 	 * 
-	 * <p>If mode is 2, the second argument is name of a comma separated file
-	 * text file with interval ranges.</p>
+	 * If mode is 2, the second argument is name of a comma separated file
+	 * text file with interval ranges.
 	 */
 	public static void main(String[] args) {
 		if (args.length < 1) {
@@ -55,12 +53,12 @@ public class IntervalTreeMain {
 	 * data_01.csv and constructs the interval tree, then runs several 
 	 * insert/delete/overlap queries.</p>
 	 * 
-	 * <p>The format of each line of the data file is:</p>
+	 * The format of each line of the data file is:
 	 * 
-	 * <pre>interval_start,interval_end,interval_label</pre>
+	 * interval_start,interval_end,interval_label
 	 * 
-	 * <p>Example:</p>
-	 * <pre>
+	 * Example:
+	 * 
 	 * 16,60,p9
 	 * 11,37,p8
 	 * 26,62,p7
@@ -70,11 +68,11 @@ public class IntervalTreeMain {
 	 * 25,26,p3
 	 * 3,28,p2
 	 * 4,46,p1
-	 * 3,16,p0</pre>
+	 * 3,16,p0
 	 * 
 	 * @param filename The name of a csv file where each row represents
 	 * one interval and is specified in form: 
-	 * <code>start_time,end_time,interval_label</code>
+	 * start_time,end_time,interval_label
 	 */
 	public void nonInteractiveMode(String filename) {
 		IntervalTreeADT<Integer> tree = new IntervalTree<Integer>();
@@ -131,7 +129,7 @@ public class IntervalTreeMain {
 	 * command line. Use this mode to iteratively build the program and debug 
 	 * it using the TreeViewer.
 	 * 
-	 * <pre>
+	 * 
      * 1. Insert Schedule
      * 2. Delete Schedule
      * 3. Find Overlapping Schedules
@@ -139,7 +137,7 @@ public class IntervalTreeMain {
      * 5. Print Tree Stats
      * 6. Show Tree Viewer
      * 7. Quit Program
-     * Enter Choice: </pre>
+     * Enter Choice: 
 	 */
 	public void interactiveMode() {
 		IntervalTreeADT<Integer> tree = new IntervalTree<Integer>();

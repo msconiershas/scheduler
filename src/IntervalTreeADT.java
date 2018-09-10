@@ -1,24 +1,6 @@
 import java.util.List;
 
 /**
- * THIS INTERFACE IS PROVIDED TO STUDENTS AND WILL NOT BE SUBMITTED<br />
- * -- DO NOT EDIT THIS INTERFACE
- * 
- * <p>This interface defines the structure of an <code>IntervalTree</code> type. 
- * It supports modifying and inserting intervals as data items into 
- * nodes of this tree.</p>
- * 
- * <p>You must create a class named <code>IntervalTree</code> that implements
- * this interface. Your class <code>IntervalTree</code> must have following:</p>
- * 
- * <p>You may (and are encouraged to) define private helper methods as needed.
- * An example: <code>deleteHelper</code> is included to help give you an idea.</p>
- *	
- * <p>A default no-arg constructor that properly initialized the IntervalTree.</p>
- * <pre>public IntervalTree()</pre>
- *
- * <p>A constructor that constructs a tree the given node as its root node.</p>
- * <pre>public IntervalTree(IntervalNode&lt;T&gt; root)</pre>
  *
  * @param <T> A Comparable type that can be used to indicate the start 
  * and end times of an interval.

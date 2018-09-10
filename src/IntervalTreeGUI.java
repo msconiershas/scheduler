@@ -1,7 +1,4 @@
 
-/**
- * For the gui things, if you want to learn more, then you could try to search "Java swing and awt" in Google.
- */
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;

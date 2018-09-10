@@ -1,19 +1,9 @@
-/////////////////////////////////////////////////////////////////////////////
-// Semester:         CS367 Spring 2017
-// PROJECT:          p4
-// FILE:             IntervalNode
-//
-// TEAM:    Team 61a
-// Author1: McKinley Sconiers-Hasan, msconiershas@wisc.edu, 9071244371, lec2
-// Author2: Grant Darin, gdarin@wisc.edu, 9072590921, lec2
-// 
-//////////////////////////// 80 columns wide //////////////////////////////////
 /**
- * This class defines the IntervalNode for the IntervalTree. This node has 
- * three components: 1) interval - the data that we want to store in this node
- * 2) maxEnd - this represents the maximum end of any interval stored in the 
- * tree rooted at this node 3) leftNode and rightNode - the left and right 
- * node references in the IntervalTree.
+ * This class defines the IntervalNode for the IntervalTree. This node has three
+ * components: 1) interval - the data that we want to store in this node 2)
+ * maxEnd - this represents the maximum end of any interval stored in the tree
+ * rooted at this node 3) leftNode and rightNode - the left and right node
+ * references in the IntervalTree.
  * 
  * This class will be used while constructing the IntervalTree.
  *
@@ -41,6 +31,7 @@ public class IntervalNode<T extends Comparable<T>> {
 	 *            the interval data member.
 	 */
 	public IntervalNode(IntervalADT<T> interval) {
+		// TODO
 		this.interval = interval;
 		maxEnd = interval.getEnd();
 		leftNode = null;
@@ -54,20 +45,19 @@ public class IntervalNode<T extends Comparable<T>> {
 	 * @return in-order successor node
 	 */
 	public IntervalNode<T> getSuccessor() {
-		//case for no successor
 		if(rightNode == null) {
 			return null;
 		}
 		IntervalNode<T> node = rightNode;
-		//case for rightNode being smallest successor
 		if(node.getLeftNode() == null) {
 			return node;
 		}
-		//find the in-order successor if rightNode has leftNode
 		while(node.getLeftNode() != null) {
 			node = node.getLeftNode();
+			System.out.println("testing " + node.getInterval().toString());
 		}
 		return node;
+		// TODO
 	}
 
 	/**

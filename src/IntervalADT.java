@@ -1,26 +1,4 @@
 /**
- * THIS INTERFACE IS PROVIDED TO STUDENTS AND WILL NOT BE SUBMITTED<br />
- * -- DO NOT EDIT THIS INTERFACE
- * 
- * <p>This type describes the required methods of your required
- * <code>Interval</code> type. Note: that it implements <code>Comparator</code> 
- * so that two intervals can be compared with each other.</p>
- * 
- *  <p>You must define your class <code>Interval</code> so that it implements this
- * interface.</p>
- * 
- * <p>This interval can be used to represent various things. For example, in
- * scheduling problem, this will represent the start and end dates for an
- * assignment. This Interval will be stored as a data member inside our
- * IntervalTree.</p>
- *  
- * <p>Note: there are no <i>setter</i> methods for the data members of this type,
- * therefore the data must be passed in as arguments to the constructor and 
- * saved as data members accordingly. The <code>Interval</code> class that you 
- * define that implements this ADT, must include a constructor of the form:</p>
- * 
- * <pre>public Interval(T start, T end, String label)</pre>
- * 
  * @param <T>
  *            the template param for start/end fields.
  */
